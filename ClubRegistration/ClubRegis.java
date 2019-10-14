@@ -74,7 +74,6 @@ public class ClubRegis
         System.out.println("Welcome to the Club Registration Page.");
         do
         {
-        	n++;
             System.out.println("Please Choose an Option");
             System.out.println("1. List of available seats in each club");
             System.out.println("2. Registration Form");
@@ -96,6 +95,8 @@ public class ClubRegis
                 }
                 case 2:
                 {
+                    n++;
+                    sc.nextLine();
                     System.out.println("Enter your name :");
                     for(i = n - 1; i < n; i++)
                     {
@@ -108,7 +109,7 @@ public class ClubRegis
                         regisNo[i] = sc.nextLine();
                     }
                     sc.nextLine();
-                    System.out.println("Are you a hosteller or a dayscholar?");
+                    System.out.println("Are you a hosteller or a day scholar?");
                     resi = sc.next().charAt(0);
                     for(i = n - 1; i < n; i++)
                     {
@@ -121,18 +122,17 @@ public class ClubRegis
                             residence[i] = "Day Scholar";
                         }
                     }
-                    
                     CR.show();
                     clubno = sc.nextInt();
                     while(flag == 0)
                     {
                         for(i = n - 1; i < n; i++)
                         {
-                            if(availableSeats[i] > 0)
+                            if(availableSeats[clubno-1] > 0)
                             {
                                 selectedClub[i] = clubNames[clubno - 1];
                                 System.out.println("Registered for " + clubNames[clubno - 1]);
-                                availableSeats[i]--;
+                                availableSeats[clubno-1]--;
                                 flag = 1;
                             }
                             else
@@ -143,8 +143,9 @@ public class ClubRegis
                             }
                         }
                     }
+                    flag = 0;
                     
-                    System.out.println("Where are you in your educaation?");
+                    System.out.println("Where are you in your education?");
                     System.out.println("1. Fresher\n2. Sophomore\n3. Junior\n4. Senior");
                     year = sc.nextInt();
                     for(i = n - 1; i < n; i++)
@@ -200,19 +201,27 @@ public class ClubRegis
                 }
                 case 3:
                 {
-                	System.out.println("These are the students who have registered through this system.");
-                	System.out.println("----------------------------------------------------------------");
-                	for(i = 0; i < n; i++)
-					{
-						System.out.println("Name : " + name[i]);
-						System.out.println("Registration Number : " + regisNo[i]);
-						System.out.println("Position : " + years[i]);
-						System.out.println("Residence : " + residence[i]);
-						System.out.println("Enrolled Club : " + selectedClub[i]);
-						System.out.println("Member Type : " + memberType[i]);
-						System.out.println("Phone Number : " + phNo[i]);
-						System.out.println("----------------------------------------------------------------");
-					}
+                    if(n > 0)
+                    {
+                        System.out.println("These are the students who have registered through this system.");
+                        System.out.println("----------------------------------------------------------------");
+                        for(i = 0; i < n; i++)
+                        {
+                            System.out.println("Name : " + name[i]);
+                            System.out.println("Registration Number : " + regisNo[i]);
+                            System.out.println("Position : " + years[i]);
+                            System.out.println("Residence : " + residence[i]);
+                            System.out.println("Enrolled Club : " + selectedClub[i]);
+                            System.out.println("Member Type : " + memberType[i]);
+                            System.out.println("Phone Number : " + phNo[i]);
+                            System.out.println("----------------------------------------------------------------");
+                        }
+                    }
+                    else
+                    {
+                        System.out.println("This system has no registrations yet.");
+                    }
+                	
                     break;
                 }
                 default:
@@ -221,7 +230,7 @@ public class ClubRegis
                     break;
                 }
             }
-            System.out.println("Please hand over the system to another person.");
+            System.out.println("Choose your next step.");
             System.out.println("1. Proceed\n2. Exit");
             cs = sc.nextInt();
         }while(cs == 1);
