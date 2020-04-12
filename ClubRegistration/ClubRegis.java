@@ -14,7 +14,7 @@ public class ClubRegis
         String[] memberType = new String[10];
         long[] phNo = new long[10];
         char resi, type;
-        int i, cs, clubno, year, n = 0, flag = 0;
+        int i, cs, clubno, year, n = 0, fl = 0, flag = 0;
 
         String[] clubNames =
         {
@@ -109,23 +109,36 @@ public class ClubRegis
                         regisNo[i] = sc.nextLine();
                     }
                     sc.nextLine();
-                    System.out.println("Are you a hosteller or a day scholar?");
-                    resi = sc.next().charAt(0);
-                    for(i = n - 1; i < n; i++)
-                    {
-                        if(resi == 'h'|| resi == 'H')
-                        {
-                            residence[i] = "Hosteller";
-                        }
-                        else if(resi == 'd'||resi == 'D')
-                        {
-                            residence[i] = "Day Scholar";
-                        }
-                    }
-                    CR.show();
-                    clubno = sc.nextInt();
+                    flag = 0;
                     while(flag == 0)
                     {
+                        System.out.println("Are you a hosteller or a day scholar?");
+                        resi = sc.next().charAt(0);
+                        for(i = n - 1; i < n; i++)
+                        {
+                            if(resi == 'h'|| resi == 'H')
+                            {
+                                residence[i] = "Hosteller";
+                                flag = 1;
+                            }
+                            else if(resi == 'd'||resi == 'D')
+                            {
+                                residence[i] = "Day Scholar";
+                                flag = 1;
+                            }
+                            else
+                            {
+                                System.out.println("Seems like you made a mistake, returning back to selection");
+                                flag = 0;
+                            }
+                        }
+                    }
+                    flag = 0;
+                    
+                    while(flag == 0)
+                    {
+                        CR.show();
+                        clubno = sc.nextInt();
                         for(i = n - 1; i < n; i++)
                         {
                             if(availableSeats[clubno-1] > 0)
@@ -134,6 +147,11 @@ public class ClubRegis
                                 System.out.println("Registered for " + clubNames[clubno - 1]);
                                 availableSeats[clubno-1]--;
                                 flag = 1;
+                            }
+                            else if(clubno < 0 || clubno > 43)
+                            {
+                                System.out.println("Invalid input, returning back to club selection...");
+                                flag = 0;
                             }
                             else
                             {
@@ -144,31 +162,38 @@ public class ClubRegis
                         }
                     }
                     flag = 0;
-                    
-                    System.out.println("Where are you in your education?");
-                    System.out.println("1. Fresher\n2. Sophomore\n3. Junior\n4. Senior");
-                    year = sc.nextInt();
-                    for(i = n - 1; i < n; i++)
+                    while(flag == 0)
                     {
-                        if(year == 1)
+                        System.out.println("Where are you in your education?");
+                        System.out.println("1. Fresher\n2. Sophomore\n3. Junior\n4. Senior");
+                        year = sc.nextInt();
+                        for(i = n - 1; i < n; i++)
                         {
-                            years[i] = "Fresher";
-                        }
-                        else if(year == 2)
-                        {
-                            years[i] = "Sophomore";
-                        }
-                        else if(year == 3)
-                        {
-                            years[i] = "Junior";
-                        }
-                        else if(year == 4)
-                        {
-                            years[i] = "Senior";
-                        }
-                        else
-                        {
-                            System.out.println("Invalid Option");
+                            if(year == 1)
+                            {
+                                years[i] = "Fresher";
+                                flag = 1;
+                            }
+                            else if(year == 2)
+                            {
+                                years[i] = "Sophomore";
+                                flag = 1;
+                            }
+                            else if(year == 3)
+                            {
+                                years[i] = "Junior";
+                                flag = 1;
+                            }
+                            else if(year == 4)
+                            {
+                                years[i] = "Senior";
+                                flag = 1;
+                            }
+                            else
+                            {
+                                System.out.println("Invalid Option, returning back to selection...");
+                                flag = 0;
+                            }
                         }
                     }
                     
@@ -177,24 +202,31 @@ public class ClubRegis
 					{
 						phNo[i] = sc.nextLong();
 					}
-                    System.out.println("What kind of a club member do you wish to be?");
-                    System.out.println("Credit or Volunteer?");
-                    type = sc.next().charAt(0);
-                    for(i = n - 1; i< n; i++)
-					{
-						if(type == 'c'|| type == 'C')
-						{
-							memberType[i] = "Credit Member";
-						}
-						else if(type == 'v'|| type == 'V')
-						{
-							memberType[i] = "Volunteer";
-						}
-						else
-						{
-							System.out.println("Invalid Input");
-						}
-					}
+                    flag = 0;
+                    while(flag == 0)
+                    {
+                        System.out.println("What kind of a club member do you wish to be?");
+                        System.out.println("Credit or Volunteer?");
+                        type = sc.next().charAt(0);
+                        for(i = n - 1; i< n; i++)
+                        {
+                            if(type == 'c'|| type == 'C')
+                            {
+                                memberType[i] = "Credit Member";
+                                flag = 1;
+                            }
+                            else if(type == 'v'|| type == 'V')
+                            {
+                                memberType[i] = "Volunteer";
+                                flag = 1;
+                            }
+                            else
+                            {
+                                System.out.println("Invalid Input, returning back to selection...");
+                                flag = 0;
+                            }
+                        }
+                    }
                     System.out.println("You have successfully registered.");
                     System.out.println("---------------------------------------------------------------");
                     break;
@@ -239,58 +271,71 @@ public class ClubRegis
     void show()
     {
     	Scanner sc = new Scanner(System.in);
-        System.out.println("Which Club do you wish to join?");
-        System.out.println("1. Technical\n2. Non - Technical");
-        int tnt = sc.nextInt();
-        if(tnt == 1)
+    	int flag;
+    	flag = 0;
+    	while(flag == 0)
         {
-            System.out.println("\nPick your club :\n");
-            System.out.println("1. Computer Society of India");
-            System.out.println("2. IEEE Student Branch");
-            System.out.println("3. Developer Student Clubs");
-            System.out.println("4. Open Source Community");
-            System.out.println("5. Android Club");
-            System.out.println("6. Academic & Industrial Nano Society");
-            System.out.println("7. Robotics Club");
-            System.out.println("8. Null Chapter");
-            System.out.println("9. Drushya - Animation and Gaming");
-            System.out.println("10. Bulls and Bears - Investment and stock trading club");
-            System.out.println("11. BaN - Be a Nerd Club");
-            System.out.println("12. Math Club");
-            System.out.println("13. Cloud Space Community");
-            System.out.println("14. Renewable Energy Club");
-            System.out.println("15. ACM Student Chapter");
-            System.out.println("16. Students for the Exploration and Development of Space");
-            System.out.println("17. L.I.T.D.A.C - Data Analytics Club");
-            System.out.println("18. Electronics Hobby Club");
-            System.out.println("19. Teach your Machine Club");
-            System.out.println("20. Fly your Ideas Club");
-            System.out.println("21. Block Chain Club");
-            System.out.println("22. Youtuber Club");
-            System.out.println("23. SPARK - Electric Vehicle Club");
-            System.out.println("24. Creation Club");
+            System.out.println("Which Club do you wish to join?");
+            System.out.println("1. Technical\n2. Non - Technical");
+            int tnt = sc.nextInt();
+            if(tnt == 1)
+            {
+                System.out.println("\nPick your club :\n");
+                System.out.println("1. Computer Society of India");
+                System.out.println("2. IEEE Student Branch");
+                System.out.println("3. Developer Student Clubs");
+                System.out.println("4. Open Source Community");
+                System.out.println("5. Android Club");
+                System.out.println("6. Academic & Industrial Nano Society");
+                System.out.println("7. Robotics Club");
+                System.out.println("8. Null Chapter");
+                System.out.println("9. Drushya - Animation and Gaming");
+                System.out.println("10. Bulls and Bears - Investment and stock trading club");
+                System.out.println("11. BaN - Be a Nerd Club");
+                System.out.println("12. Math Club");
+                System.out.println("13. Cloud Space Community");
+                System.out.println("14. Renewable Energy Club");
+                System.out.println("15. ACM Student Chapter");
+                System.out.println("16. Students for the Exploration and Development of Space");
+                System.out.println("17. L.I.T.D.A.C - Data Analytics Club");
+                System.out.println("18. Electronics Hobby Club");
+                System.out.println("19. Teach your Machine Club");
+                System.out.println("20. Fly your Ideas Club");
+                System.out.println("21. Block Chain Club");
+                System.out.println("22. Youtuber Club");
+                System.out.println("23. SPARK - Electric Vehicle Club");
+                System.out.println("24. Creation Club");
+                flag = 1;
+            }
+            else if(tnt == 2)
+            {
+                System.out.println("25. ToastMasters");
+                System.out.println("26. Dhwani - Theatre and Fine Art Club");
+                System.out.println("27. LIVIT Club");
+                System.out.println("28. Master Mind - The Quiz Club");
+                System.out.println("29. The Gardening Club");
+                System.out.println("30. Comedy Club");
+                System.out.println("31. DIY - Do It Yourself Club");
+                System.out.println("32. Bioscope - Movie making and Screening Club");
+                System.out.println("33. Run 4 a Cause");
+                System.out.println("34. Adventure Club");
+                System.out.println("35. Click n Flick");
+                System.out.println("36. Clean Campus Club");
+                System.out.println("37. National Service Scheme");
+                System.out.println("38. Beat the Heat - Dance Club");
+                System.out.println("39. Sports Club");
+                System.out.println("40. Indian Classical Music Club");
+                System.out.println("41. Western Music Club");
+                System.out.println("42. Sanskriti - Culture Club");
+                System.out.println("43. SEED - Social Entrepreneurship Empowerment and Development Club");
+                flag = 1;
+            }
+            else
+            {
+                System.out.println("Looks like you've made a mistake, let's try again...");
+                flag = 0;
+            }
         }
-        if(tnt == 2)
-        {
-            System.out.println("25. ToastMasters");
-            System.out.println("26. Dhwani - Theatre and Fine Art Club");
-            System.out.println("27. LIVIT Club");
-            System.out.println("28. Master Mind - The Quiz Club");
-            System.out.println("29. The Gardening Club");
-            System.out.println("30. Comedy Club");
-            System.out.println("31. DIY - Do It Yourself Club");
-            System.out.println("32. Bioscope - Movie making and Screening Club");
-            System.out.println("33. Run 4 a Cause");
-            System.out.println("34. Adventure Club");
-            System.out.println("35. Click n Flick");
-            System.out.println("36. Clean Campus Club");
-            System.out.println("37. National Service Scheme");
-            System.out.println("38. Beat the Heat - Dance Club");
-            System.out.println("39. Sports Club");
-            System.out.println("40. Indian Classical Music Club");
-            System.out.println("41. Western Music Club");
-            System.out.println("42. Sanskriti - Culture Club");
-            System.out.println("43. SEED - Social Entrepreneurship Empowerment and Development Club");
-        }
+        
     }
 }
