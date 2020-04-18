@@ -18,5 +18,6 @@ public class ATM{
 			bal_amt = bal_amt - with_amt - 0.5;
 		}
 		System.out.println(bal_amt);
+		sc.close();
 	}
 }
