@@ -10,7 +10,9 @@
 - PrimeNumbers | Counting the number of primes till a given point
 - SumOfPrimes | Finds the sum of prime numbers till a given point
 ## Online_Programs
-- ATM.java | CodeChef
+- ATM.java | <a href="https://www.codechef.com/problems/HS08TEST">CodeChef</a>
+- jewels_stones | <a href="https://www.codechef.com/problems/STONES">CodeChef</a>
+- hourglass.java | <a href="https://www.hackerrank.com/challenges/2d-array/problem">HackerRank</a>
 ## Sorting
 - bubbleSort.java
 - insertionSort.java
