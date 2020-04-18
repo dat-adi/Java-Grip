@@ -13,6 +13,8 @@
 - ATM.java | <a href="https://www.codechef.com/problems/HS08TEST">CodeChef</a>
 - jewels_stones | <a href="https://www.codechef.com/problems/STONES">CodeChef</a>
 - hourglass.java | <a href="https://www.hackerrank.com/challenges/2d-array/problem">HackerRank</a>
+- leftRotation.java | <a href="https://www.hackerrank.com/challenges/array-left-rotation/problem">HackerRank</a>
+- triplets.java | <a href="https://www.hackerrank.com/challenges/compare-the-triplets/problem">HackerRank</a>
 ## Sorting
 - bubbleSort.java
 - insertionSort.java
