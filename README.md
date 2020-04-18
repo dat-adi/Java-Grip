@@ -9,6 +9,9 @@
 - BetweenPrimes | Finding a number between two primes.
 - PrimeNumbers | Counting the number of primes till a given point
 - SumOfPrimes | Finds the sum of prime numbers till a given point
+## Trees
+- BinaryTree.java | Creates a binary tree with pre, in, post order outputs.
+- BST.java | Creates a Binary Search Tree with all the required operations.
 ## Online_Programs
 - ATM.java | <a href="https://www.codechef.com/problems/HS08TEST">CodeChef</a>
 - jewels_stones.java | <a href="https://www.codechef.com/problems/STONES">CodeChef</a>
