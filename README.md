@@ -18,6 +18,7 @@
 - hourglass.java | <a href="https://www.hackerrank.com/challenges/2d-array/problem">HackerRank</a>
 - leftRotation.java | <a href="https://www.hackerrank.com/challenges/array-left-rotation/problem">HackerRank</a>
 - triplets.java | <a href="https://www.hackerrank.com/challenges/compare-the-triplets/problem">HackerRank</a>
+- eleLinked.java | <a href="https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem">HackerRank</a>
 ## Sorting
 - bubbleSort.java
 - insertionSort.java
