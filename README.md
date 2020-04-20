@@ -20,7 +20,7 @@
 - triplets.java | <a href="https://www.hackerrank.com/challenges/compare-the-triplets/problem">HackerRank</a>
 - eleLinked.java | <a href="https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem">HackerRank</a>
 - formatOutput.java | <a href="https://www.hackerrank.com/challenges/java-output-formatting/problem">HackerRank</a>
-- series.java | <a href="https://www.hackerrank.com/challenges/java-loops/problem?h_r=profile"></a>
+- series.java | <a href="https://www.hackerrank.com/challenges/java-loops/problem?h_r=profile">HackerRank</a>
 ## Sorting
 - bubbleSort.java
 - insertionSort.java
