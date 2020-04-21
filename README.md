@@ -21,6 +21,7 @@
 - eleLinked.java | <a href="https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem">HackerRank</a>
 - formatOutput.java | <a href="https://www.hackerrank.com/challenges/java-output-formatting/problem">HackerRank</a>
 - series.java | <a href="https://www.hackerrank.com/challenges/java-loops/problem?h_r=profile">HackerRank</a>
+- static_intializer.java | <a href="https://www.hackerrank.com/challenges/java-static-initializer-block/problem">HackerRank</a>
 ## Sorting
 - bubbleSort.java
 - insertionSort.java
