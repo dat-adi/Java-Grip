@@ -1,10 +1,14 @@
+import java.util.*;
+
 public class Primeno1
 {
 	public static void main(String[] args)
 	{
+		Scanner sc = new Scanner(System.in);
+		int size = sc.nextInt();
 		int i,n;
 		String str = "";
-		for(i = 0; i <= 100; i++)
+		for(i = 0; i <= size; i++)
 		{
 			int counter = 0;
 			for(n=i;n>=1;n--)
@@ -20,5 +24,6 @@ public class Primeno1
 			}
 		}
 		System.out.println(str);
+		sc.close();
 	}
 }
