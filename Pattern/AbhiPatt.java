@@ -1,3 +1,5 @@
+package Pattern;
+
 public class AbhiPatt
 {
 	public static void main(String[] args)

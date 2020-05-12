@@ -3,6 +3,8 @@
  *  You're also given a string S composed of latin characters where each character is a mined stone.
  *  You have to find out how many characters of S are in J as well.
 */
+package online_programs;
+
 import java.util.*;
 
 class jewels_stones{

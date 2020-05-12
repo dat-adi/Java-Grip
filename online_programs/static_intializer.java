@@ -1,3 +1,5 @@
+package online_programs;
+
 import java.util.*;
 
 public class static_intializer {
