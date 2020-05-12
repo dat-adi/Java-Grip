@@ -1,3 +1,5 @@
+package Prime;
+
 import java.util.*;
 
 public class Primeno1
