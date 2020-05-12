@@ -1,5 +1,3 @@
-package Pattern;
-
 public class VijayPatt
 {
 	public static void main(String[] args)

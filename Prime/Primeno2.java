@@ -1,10 +1,7 @@
-package Prime;
-
 import java.util.*;
-
-class Primeno2
+public class Primeno2
 {
-	public static void main(String[] args)
+	public static void main(String args[])
 	{
 		int n, i, k, sum = 0;
 		Scanner sc=new Scanner(System.in); 

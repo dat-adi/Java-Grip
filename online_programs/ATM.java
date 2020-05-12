@@ -5,7 +5,6 @@ and Pooja's account balance has enough cash to perform the withdrawal transactio
 For each successful withdrawal the bank charges 0.50 $US.
 Calculate Pooja's account balance after an attempted transaction.
 */
-package online_programs;
 
 import java.util.*;
 
