@@ -1,4 +1,4 @@
-/*
+/**
  *  You're given a string J composed of latin characters where each character is a jewel.
  *  You're also given a string S composed of latin characters where each character is a mined stone.
  *  You have to find out how many characters of S are in J as well.
@@ -7,8 +7,7 @@ package online_programs;
 
 import java.util.*;
 
-class jewels_stones{
-    
+class jewel_stones{
     private static int countOfJews(String jewels, String stones, int count){
         for(int i = 0; i < stones.length(); i++){
             for(int j = 0; j < jewels.length(); j++){
@@ -20,7 +19,6 @@ class jewels_stones{
         }
         return count;
     }
-    
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Jewels?");
