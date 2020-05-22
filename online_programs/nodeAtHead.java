@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class nodeAtTail {
+public class nodeAtHead {
 
     static class SinglyLinkedListNode {
         public int data;
@@ -15,12 +15,12 @@ public class nodeAtTail {
 
     static class SinglyLinkedList {
         public SinglyLinkedListNode head;
+        public SinglyLinkedListNode tail;
 
         public SinglyLinkedList() {
             this.head = null;
+            this.tail = null;
         }
-
-      
     }
 
     public static void printSinglyLinkedList(SinglyLinkedListNode node, String sep, BufferedWriter bufferedWriter) throws IOException {
@@ -35,21 +35,16 @@ public class nodeAtTail {
         }
     }
 
-    static SinglyLinkedListNode insertNodeAtTail(SinglyLinkedListNode head, int data) {
+    static SinglyLinkedListNode insertNodeAtHead(SinglyLinkedListNode llist, int data) {
         SinglyLinkedListNode temp = new SinglyLinkedListNode(data);
-        SinglyLinkedListNode tail = null;
-        if(head == null){
-            head = tail = temp;
+        if(llist == null){
+            llist = temp;
         }
-        else
-            tail = head;
-        while(tail.next != null){
-            tail = tail.next;
+        else{
+            temp.next = llist;
         }
-        tail.next = temp;
-        tail = temp;
-        tail.next = null;
-        return head;
+        llist = temp;
+        return llist;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
@@ -66,7 +61,7 @@ public class nodeAtTail {
             int llistItem = scanner.nextInt();
             scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
         	
-          SinglyLinkedListNode llist_head = insertNodeAtTail(llist.head, llistItem);
+          SinglyLinkedListNode llist_head = insertNodeAtHead(llist.head, llistItem);
 
           llist.head = llist_head;
         }
