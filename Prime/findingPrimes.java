@@ -2,11 +2,12 @@ package Prime;
 
 import java.util.*;
 
-public class Primeno1
+public class findingPrimes
 {
 	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
+		System.out.print("Upper limit to find primes : ");
 		int size = sc.nextInt();
 		int i,n;
 		String str = "";

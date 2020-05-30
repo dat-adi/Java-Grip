@@ -2,7 +2,7 @@ package Prime;
 
 import java.util.*;
 
-public class BwPr
+public class BetweenPrimes
 {
 	public static void main(String[] args)
 	{
