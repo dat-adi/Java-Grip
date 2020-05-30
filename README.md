@@ -5,7 +5,7 @@ Start.java             | 1D Array, 2D Array, splitting up of a string
 </pre>
 ## Club Registration
 <pre>
-ClubRegis.java & ClubTemp.java   | A club registration program, that was given as a school project.
+ClubRegis.java         | A club registration program, that was given as a school project.
 </pre>
 ## Pattern
 Programs that exhibit certain patterns

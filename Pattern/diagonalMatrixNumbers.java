@@ -2,7 +2,7 @@ package Pattern;
 
 import java.util.*;
 
-public class TheSanthoshPattern
+public class diagonalMatrixNumbers
 {
 	public static void main(String[] args)
 	{
