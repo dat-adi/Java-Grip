@@ -2,7 +2,7 @@ package online_programs;
 
 import java.util.*;
 
-public class static_intializer {
+public class static_initializer {
     static Scanner sc = new Scanner(System.in);
     static int B = sc.nextInt();
     static int H = sc.nextInt();

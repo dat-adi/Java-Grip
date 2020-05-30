@@ -8,7 +8,11 @@ Start.java             | 1D Array, 2D Array, splitting up of a string
 ClubRegis.java         | A club registration program, that was given as a school project.
 </pre>
 ## Pattern
-Programs that exhibit certain patterns
+<pre>
+diagonalMatrixNumbers  | A program that can make a matrix which increases diagonally.
+flagPole               | A program that creates a flag pole pattern.
+reverseTriangle        | A program that creates a triangle reversed vertically.
+</pre>
 ## Prime
 <pre>
 BetweenPrimes          | Finding a number between two primes.
@@ -30,7 +34,7 @@ triplets.java          | <a href="https://www.hackerrank.com/challenges/compare-
 eleLinked.java         | <a href="https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem">HackerRank</a>
 formatOutput.java      | <a href="https://www.hackerrank.com/challenges/java-output-formatting/problem">HackerRank</a>
 series.java            | <a href="https://www.hackerrank.com/challenges/java-loops/problem?h_r=profile">HackerRank</a>
-static_intializer.java | <a href="https://www.hackerrank.com/challenges/java-static-initializer-block/problem">HackerRank</a>
+static_initializer     | <a href="https://www.hackerrank.com/challenges/java-static-initializer-block/problem">HackerRank</a>
 </pre>
 ## Sorting
 <pre>
@@ -39,6 +43,7 @@ insertionSort.java     | Sorts elements using the insertion sort algorithm
 quickSort.java         | Sorts elements using the quick sort algorithm
 selectionSort.java     | Sorts elements using the selection sort algorithm
 MergeSort.java         | Sorts elements using the merge sort algorithm
+heapSort.java          | Sorts elements using the heap sort algorithm
 </pre>
 ---
  This is a compilation of all the java programs i've tried and tested.
