@@ -7,7 +7,7 @@ package online_programs;
 
 import java.util.*;
 
-class jewel_stones{
+class jewels_stones{
     private static int countOfJews(String jewels, String stones, int count){
         for(int i = 0; i < stones.length(); i++){
             for(int j = 0; j < jewels.length(); j++){
