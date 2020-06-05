@@ -24,7 +24,12 @@ SumOfPrimes            | Finds the sum of prime numbers till a given point
 BinaryTree.java        | Creates a Binary tree with pre, in, post order outputs.
 BST.java               | Creates a Binary Search Tree with all the required operations.
 </pre>
-## Online_Programs
+## Graph Traversal
+<pre>
+breadthFirstSearch.java| Creates a graph which can be navigated using the bfs algorithm.
+depthFirstSearch.java  | Creates a graph which can navigated using the dfs algorithm.
+</pre>
+## Online Programs
 <pre>
 ATM.java               | <a href="https://www.codechef.com/problems/HS08TEST">CodeChef</a>
 jewels_stones.java     | <a href="https://www.codechef.com/problems/STONES">CodeChef</a>
