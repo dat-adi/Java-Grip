@@ -50,5 +50,9 @@ selectionSort.java     | Sorts elements using the selection sort algorithm
 MergeSort.java         | Sorts elements using the merge sort algorithm
 heapSort.java          | Sorts elements using the heap sort algorithm
 </pre>
+## HashTables
+<pre>
+quadratic_probing.java | Creates a hashing table, employs methods with quadratic probing.
+</pre>
 ---
  This is a compilation of all the java programs i've tried and tested.
