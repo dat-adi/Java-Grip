@@ -5,21 +5,22 @@ import java.util.Scanner;
 class quadratic_probing{
     private static class QuadraticProbingHashTable
     {
-        private int currentSize, maxSize;
+        private int currentSize;
+        private final int maxSize;
         private String[] keys;
-        private String[] vals;
+        private String[] values;
         
         public QuadraticProbingHashTable(int capacity){
             currentSize = 0;
             maxSize = capacity;
             keys = new String[maxSize];
-            vals = new String[maxSize];
+            values = new String[maxSize];
         }
 
         public void makeEmpty(){
             currentSize = 0;
             keys = new String[maxSize];
-            vals = new String[maxSize];
+            values = new String[maxSize];
         }
 
         public int getSize(){
@@ -48,13 +49,13 @@ class quadratic_probing{
             do{
                 if (keys[i] == null){
                     keys[i] = key;
-                    vals[i] = val;
+                    values[i] = val;
                     currentSize++;
                     return;
                 }
                 
                 if (keys[i].equals(key)){
-                    vals[i] = val;
+                    values[i] = val;
                     return;
                 }
 
@@ -66,7 +67,7 @@ class quadratic_probing{
             while (keys[i] != null)
             {
             if (keys[i].equals(key))
-            return vals[i];
+            return values[i];
             i = (i + h * h++) % maxSize;
             System.out.println("i "+ i);
             }
@@ -80,10 +81,10 @@ class quadratic_probing{
             while (!key.equals(keys[i]))
                 i = (i + h * h++) % maxSize;
             
-            keys[i] = vals[i] = null;
+            keys[i] = values[i] = null;
             for (i = (i + h * h++) % maxSize; keys[i] != null; i = (i + h * h++) % maxSize){
-                String tmp1 = keys[i], tmp2 = vals[i];
-                keys[i] = vals[i] = null;
+                String tmp1 = keys[i], tmp2 = values[i];
+                keys[i] = values[i] = null;
                 currentSize--;
                 insert(tmp1, tmp2);
             }
@@ -94,7 +95,7 @@ class quadratic_probing{
             System.out.println("\nHash Table: ");
             for (int i = 0; i < maxSize; i++)
                 if (keys[i] != null)
-                    System.out.println(keys[i] +" "+ vals[i]);
+                    System.out.println(keys[i] +" "+ values[i]);
             System.out.println();
         }
     }
@@ -116,30 +117,30 @@ class quadratic_probing{
             
             switch (choice){
                 case 1 :
-                System.out.println("Enter key and value");
-                qpht.insert(scan.next(), scan.next() );
-                break;
+                    System.out.println("Enter key and value");
+                    qpht.insert(scan.next(), scan.next() );
+                    break;
                 case 2 :
-                System.out.println("Enter key");
-                qpht.remove( scan.next() );
-                break;
+                    System.out.println("Enter key");
+                    qpht.remove( scan.next() );
+                    break;
                 case 3 :
-                System.out.println("Enter key");
-                System.out.println("Value = "+ qpht.get( scan.next() ));
-                break;
+                    System.out.println("Enter key");
+                    System.out.println("Value = "+ qpht.get( scan.next() ));
+                    break;
                 case 4 :
-                qpht.makeEmpty();
-                System.out.println("Hash Table Cleared\n");
-                break;
+                    qpht.makeEmpty();
+                    System.out.println("Hash Table Cleared\n");
+                    break;
                 case 5 :
-                System.out.println("Size = "+ qpht.getSize() );
-                break;
+                    System.out.println("Size = "+ qpht.getSize() );
+                    break;
                 case 6 :
-                System.exit(0);
-                break;
+                    System.exit(0);
+                    break;
                 default :
-                System.out.println("Wrong Entry \n ");
-                break;
+                    System.out.println("Wrong Entry \n ");
+                    break;
             }
             qpht.printHashTable();
         }
