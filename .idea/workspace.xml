@@ -1,22 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb2ffb1b-ce57-404b-ab5b-296ba476d186" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Java-Grip.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Java-Grip.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/java_gripper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HashTables/quadratic_probing.java" beforeDir="false" afterPath="$PROJECT_DIR$/HashTables/quadratic_probing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_traversal/breadthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph_traversal/breadthFirstSearch.java" afterDir="false" />
+    <list default="true" id="fb2ffb1b-ce57-404b-ab5b-296ba476d186" name="Default Changelist" comment="revamped .idea settings to display files and folders in Idea, also added IdeaVim.">
+      <change afterPath="$PROJECT_DIR$/OOPs/data_abstraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,13 +46,40 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/HashTables/quadratic_probing.java" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="data_abstraction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OOPs.data_abstraction" />
+      <module name="Java-Grip" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OOPs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.data_abstraction" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -47,14 +91,50 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592922357881</updated>
-      <workItem from="1592922369524" duration="1282000" />
+      <workItem from="1592922369524" duration="1719000" />
+      <workItem from="1594648489122" duration="3427000" />
     </task>
+    <task id="LOCAL-00001" summary="revamped .idea settings to display files and folders in Idea, also added IdeaVim.">
+      <created>1592923796126</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592923796127</updated>
+    </task>
+    <task id="LOCAL-00002" summary="revamped .idea settings to display files and folders in Idea, also added IdeaVim.">
+      <created>1592923920447</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592923920447</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="revamped .idea settings to display files and folders in Idea, also added IdeaVim." />
+    <option name="LAST_COMMIT_MESSAGE" value="revamped .idea settings to display files and folders in Idea, also added IdeaVim." />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="655" y="268" key="#Notifications" timestamp="1594648970043">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="655" y="268" key="#Notifications/0.0.1536.864@0.0.1536.864" timestamp="1594648970043" />
     <state x="670" y="247" width="469" height="370" key="#Vim_Emulation" timestamp="1592923164282">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -63,13 +143,49 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="525" y="230" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1592922695477" />
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1592923888110">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1592923888110" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1592923624289">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1592923624289" />
+    <state x="626" y="342" key="Github.Dialog.Accounts.Choose" timestamp="1592923955154">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="626" y="342" key="Github.Dialog.Accounts.Choose/0.0.1536.864@0.0.1536.864" timestamp="1592923955154" />
+    <state width="1493" height="217" key="GridCell.Tab.0.bottom" timestamp="1594651326106">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="217" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1594651326106" />
+    <state width="1493" height="217" key="GridCell.Tab.0.center" timestamp="1594651326106">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="217" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1594651326106" />
+    <state width="1493" height="217" key="GridCell.Tab.0.left" timestamp="1594651326106">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="217" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1594651326106" />
+    <state width="1493" height="217" key="GridCell.Tab.0.right" timestamp="1594651326106">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="217" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1594651326106" />
     <state x="277" y="77" key="SettingsEditor" timestamp="1592922617249">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1592922617249" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1592924061414">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1592924061414" />
+    <state x="375" y="110" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594650789041">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="375" y="110" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.864@0.0.1536.864" timestamp="1594650789041" />
+    <state x="209" y="11" key="new project wizard" timestamp="1594648790681">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="209" y="11" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1594648790681" />
   </component>
 </project>
