@@ -18,8 +18,17 @@ public class streamTest {
 					.forEach(System.out::println);
 	}
 	
+	private static void split(){
+		String str = "Happy Happy Boi";
+		String[] strs = str.split(" ");
+		for(String s: strs){
+			System.out.println(s);
+		}
+	}
+	
 	public static void main(String[] args) {
 		stream_out();
 		convert();
+		split();
 	}
 }
