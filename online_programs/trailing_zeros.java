@@ -7,15 +7,14 @@ public class trailing_zero {
     }
     System.out.println("Factorial : " + fact);
     int count = 0;
-    while(fact > 0){
-      if(fact%10 == 0)
-        count++;
+    while(fact%10 == 0){
+      count++;
       fact /= 10;
     }
     return count;
   }
 
   public static void main(String[] args){
-    System.out.println(zeros(0));
+    System.out.println(zeros(14));
   }
 }
