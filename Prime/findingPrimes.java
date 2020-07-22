@@ -11,18 +11,14 @@ public class findingPrimes
 		int size = sc.nextInt();
 		int i,n;
 		String str = "";
-		for(i = 0; i <= size; i++)
-		{
+		for(i = 0; i <= size; i++) {
 			int counter = 0;
-			for(n=i;n>=1;n--)
-			{
-				if(i%n == 0)
-				{
+			for(n=i;n>=1;n--) {
+				if(i%n == 0) {
 					counter = counter + 1;
 				}
 			}
-			if(counter == 2)
-			{
+			if(counter == 2) {
 				str = str + i + " ";
 			}
 		}
