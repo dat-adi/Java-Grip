@@ -19,32 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb2ffb1b-ce57-404b-ab5b-296ba476d186" name="Default Changelist" comment="Complete refactor of names, and error resolution.">
+    <list default="true" id="fb2ffb1b-ce57-404b-ab5b-296ba476d186" name="Default Changelist" comment="Packaging the rest of them.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arrays/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClubRegistration/ClubRegis.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClubRegistration/ClubRegis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HashTables/quadratic_probing.java" beforeDir="false" afterPath="$PROJECT_DIR$/HashTables/QuadraticProbing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-Grip.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Grip.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pattern/diagonalMatrixNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pattern/DiagonalMatrixNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pattern/flagPole.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pattern/FlagPole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pattern/reverseTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pattern/ReverseTriangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prime/BetweenPrimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prime/BetweenPrimes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prime/findingPrimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prime/FindingPrimes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prime/summingUpPrimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prime/SummingUpPrimes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trees/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trees/BST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trees/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trees/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_traversal/breadthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph_traversal/BreadthFirstSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_traversal/depthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph_traversal/DepthFirstSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library_studies/generic/bounded_params.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_studies/generic/BoundedParams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library_studies/generic/generic_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_studies/generic/GenericTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searching/binarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/searching/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searching/linearSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/searching/LinearSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorting/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sorting/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorting/bubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sorting/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorting/heapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sorting/HeapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorting/insertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sorting/InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorting/quickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sorting/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorting/selectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sorting/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +156,7 @@
       <workItem from="1594691972206" duration="3301000" />
       <workItem from="1594722007389" duration="3387000" />
       <workItem from="1594874092061" duration="1561000" />
-      <workItem from="1595561879246" duration="5914000" />
+      <workItem from="1595561879246" duration="6868000" />
     </task>
     <task id="LOCAL-00001" summary="revamped .idea settings to display files and folders in Idea, also added IdeaVim.">
       <created>1592923796126</created>
@@ -230,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595564989669</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Packaging the rest of them.">
+      <created>1595569853107</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1595569853107</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +238,8 @@
     <MESSAGE value="streamTest.java for using stream(), filter(), and mapToInt()." />
     <MESSAGE value="missing letter program added." />
     <MESSAGE value="Complete refactor of names, and error resolution." />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete refactor of names, and error resolution." />
+    <MESSAGE value="Packaging the rest of them." />
+    <option name="LAST_COMMIT_MESSAGE" value="Packaging the rest of them." />
   </component>
   <component name="WindowStateProjectService">
     <state x="655" y="268" key="#Notifications" timestamp="1594648970043">
@@ -313,10 +298,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="13" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1594696499477" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1595565004558">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1595569856278">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1595565004558" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1595569856278" />
     <state x="584" y="210" key="chooseDestDirectoryDialog" timestamp="1595569354687">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
