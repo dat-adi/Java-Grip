@@ -2,20 +2,22 @@ package sorting;
 
 import java.util.Scanner;
 
-public class bubbleSort {
-
+class SelectionSort {
 	private static Scanner sc = new Scanner(System.in);
 	
-	private static int[] sort_arr(int[] arr, int n){
-		int i, j, temp;
-		for(i = 0; i < n; i++){
-			for(j = 0; j < i; j++){
-				if(arr[j] > arr[i]){
-					temp = arr[i];
-					arr[i] = arr[j];
-					arr[j] = temp;
+	private static int[] selectSort(int[] arr){
+		int min;
+		int n = arr.length;
+		for(int i = 0; i < n; i++){
+			min = i;
+			for(int j = i+1; j < n; j++){
+				if(min > arr[j]){
+					min = j;
 				}
 			}
+			int temp = arr[min];
+			arr[min] = arr[i];
+			arr[i] = temp;
 		}
 		return arr;
 	}
@@ -35,6 +37,6 @@ public class bubbleSort {
 		System.out.println("The old array is : ");
 		display(arr);
 		System.out.println("The new sorted array is : ");
-		display(sort_arr(arr, size));
+		display(selectSort(arr));
 	}
 }

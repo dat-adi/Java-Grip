@@ -1,6 +1,8 @@
+package ClubRegistration;
+
 import java.util.*;
 
-public class ClubRegis
+class ClubRegis
 {
     public static void main(String[] args)
     {

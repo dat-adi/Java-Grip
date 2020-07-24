@@ -1,14 +1,13 @@
 package graph_traversal;
 
-import java.io.*; 
-import java.util.*; 
+import java.util.*;
 
-class breadthFirstSearch
+class BreadthFirstSearch
 { 
     private int V;
-    private LinkedList<Integer> adj[]; 
+    private LinkedList<Integer> adj[];
 
-    breadthFirstSearch(int v) 
+    BreadthFirstSearch(int v)
     { 
         V = v; 
         adj = new LinkedList[v]; 
@@ -47,7 +46,7 @@ class breadthFirstSearch
     public static void main(String args[]) 
     {
         Scanner sc = new Scanner(System.in);
-        breadthFirstSearch g = new breadthFirstSearch(4);
+        BreadthFirstSearch g = new BreadthFirstSearch(4);
     
         do {
             System.out.println("Insert two points for the edge : ");

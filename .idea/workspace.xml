@@ -19,32 +19,32 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb2ffb1b-ce57-404b-ab5b-296ba476d186" name="Default Changelist" comment="missing letter program added.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="fb2ffb1b-ce57-404b-ab5b-296ba476d186" name="Default Changelist" comment="Complete refactor of names, and error resolution.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library_studies/Arrays_lib/streamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_studies/Arrays_lib/StreamTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/ATM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/BitCounting.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/BitCounting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/TenMinWalk.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/TenMinWalk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/deleteNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/DeleteNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/eleLinked.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/EleLinked.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/findTheWordIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/FindTheWordIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/formatOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/FormatOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/highest_lowest.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/HighestLowest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/hourglass.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/HourGlass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/jewels_stones.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/JewelsStones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/leftRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/LeftRotation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/missing_letter.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/MissingLetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/nodeAtHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/NodeAtHead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/nodeAtPos.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/NodeAtPos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/nodeAtTail.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/NodeAtTail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/primes_in_numbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/PrimeInNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/series.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/Series.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/split_strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/SplitStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/static_initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/StaticInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/trailing_zeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/TrailingZeros.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/triplets.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/Triplets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online_programs/twosum.java" beforeDir="false" afterPath="$PROJECT_DIR$/online_programs/TwoSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arrays/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/Arrays/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClubRegistration/ClubRegis.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClubRegistration/ClubRegis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HashTables/quadratic_probing.java" beforeDir="false" afterPath="$PROJECT_DIR$/HashTables/QuadraticProbing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Grip.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Grip.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pattern/diagonalMatrixNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pattern/DiagonalMatrixNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pattern/flagPole.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pattern/FlagPole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pattern/reverseTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pattern/ReverseTriangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prime/BetweenPrimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prime/BetweenPrimes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prime/findingPrimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prime/FindingPrimes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prime/summingUpPrimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prime/SummingUpPrimes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trees/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trees/BST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trees/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trees/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph_traversal/breadthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph_traversal/BreadthFirstSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph_traversal/depthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/graph_traversal/DepthFirstSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library_studies/generic/bounded_params.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_studies/generic/BoundedParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library_studies/generic/generic_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/library_studies/generic/GenericTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/searching/binarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/searching/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/searching/linearSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/searching/LinearSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sorting/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sorting/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sorting/bubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sorting/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sorting/heapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sorting/HeapSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sorting/insertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sorting/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sorting/quickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sorting/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sorting/selectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sorting/SelectionSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +75,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/Trees" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/HashTables/quadratic_probing.java" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -82,18 +83,18 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.StaticInitializer">
-    <configuration name="LeftRotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="online_programs.LeftRotation" />
+  <component name="RunManager" selected="Application.SelectionSort">
+    <configuration name="FlagPole" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Pattern.FlagPole" />
       <module name="Java-Grip" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="online_programs.*" />
+          <option name="PATTERN" value="Pattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MissingLetter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="online_programs.MissingLetter" />
+    <configuration name="GenericTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="library_studies.generic.GenericTest" />
       <module name="Java-Grip" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="online_programs.HighestLowest" />
+          <option name="PATTERN" value="library_studies.generic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +115,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeInNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="online_programs.PrimeInNumbers" />
+    <configuration name="ReverseTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Pattern.ReverseTriangle" />
       <module name="Java-Grip" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="online_programs.HighestLowest" />
+          <option name="PATTERN" value="Pattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sorting.SelectionSort" />
+      <module name="Java-Grip" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,26 +154,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="library_studies.Arrays_lib.StreamTest" />
-      <module name="Java-Grip" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="library_studies.Arrays_lib.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SelectionSort" />
+        <item itemvalue="Application.FlagPole" />
+        <item itemvalue="Application.ReverseTriangle" />
+        <item itemvalue="Application.GenericTest" />
         <item itemvalue="Application.StaticInitializer" />
-        <item itemvalue="Application.LeftRotation" />
-        <item itemvalue="Application.PrimeInNumbers" />
-        <item itemvalue="Application.MissingLetter" />
-        <item itemvalue="Application.StreamTest" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +179,7 @@
       <workItem from="1594691972206" duration="3301000" />
       <workItem from="1594722007389" duration="3387000" />
       <workItem from="1594874092061" duration="1561000" />
-      <workItem from="1595561879246" duration="3023000" />
+      <workItem from="1595561879246" duration="5914000" />
     </task>
     <task id="LOCAL-00001" summary="revamped .idea settings to display files and folders in Idea, also added IdeaVim.">
       <created>1592923796126</created>
@@ -222,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594877481311</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Complete refactor of names, and error resolution.">
+      <created>1595564989669</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1595564989669</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,13 +253,18 @@
     <MESSAGE value="Testing out OOPs concepts on Java." />
     <MESSAGE value="streamTest.java for using stream(), filter(), and mapToInt()." />
     <MESSAGE value="missing letter program added." />
-    <option name="LAST_COMMIT_MESSAGE" value="missing letter program added." />
+    <MESSAGE value="Complete refactor of names, and error resolution." />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete refactor of names, and error resolution." />
   </component>
   <component name="WindowStateProjectService">
     <state x="655" y="268" key="#Notifications" timestamp="1594648970043">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="655" y="268" key="#Notifications/0.0.1536.864@0.0.1536.864" timestamp="1594648970043" />
+    <state x="249" y="6" key="#Project_Structure" timestamp="1595569432567">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="249" y="6" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1595569432567" />
     <state x="670" y="247" width="469" height="370" key="#Vim_Emulation" timestamp="1592923164282">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -280,30 +293,34 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="626" y="342" key="Github.Dialog.Accounts.Choose/0.0.1536.864@0.0.1536.864" timestamp="1592923955154" />
-    <state width="1493" height="217" key="GridCell.Tab.0.bottom" timestamp="1595564159523">
+    <state width="1493" height="217" key="GridCell.Tab.0.bottom" timestamp="1595569150137">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="217" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1595564159523" />
-    <state width="1493" height="217" key="GridCell.Tab.0.center" timestamp="1595564159523">
+    <state width="1493" height="217" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1595569150137" />
+    <state width="1493" height="217" key="GridCell.Tab.0.center" timestamp="1595569150137">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="217" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1595564159523" />
-    <state width="1493" height="217" key="GridCell.Tab.0.left" timestamp="1595564159523">
+    <state width="1493" height="217" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1595569150137" />
+    <state width="1493" height="217" key="GridCell.Tab.0.left" timestamp="1595569150137">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="217" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1595564159523" />
-    <state width="1493" height="217" key="GridCell.Tab.0.right" timestamp="1595564159523">
+    <state width="1493" height="217" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1595569150137" />
+    <state width="1493" height="217" key="GridCell.Tab.0.right" timestamp="1595569150137">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="217" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1595564159523" />
+    <state width="1493" height="217" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1595569150137" />
     <state x="277" y="13" key="SettingsEditor" timestamp="1594696499477">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="13" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1594696499477" />
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1594877498353">
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1595565004558">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1594877498353" />
+    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1595565004558" />
+    <state x="584" y="210" key="chooseDestDirectoryDialog" timestamp="1595569354687">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="584" y="210" key="chooseDestDirectoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1595569354687" />
     <state x="375" y="110" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594722260083">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

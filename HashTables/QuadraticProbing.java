@@ -2,7 +2,7 @@ package HashTables;
 
 import java.util.Scanner;
 
-class quadratic_probing{
+class QuadraticProbing {
     private static class QuadraticProbingHashTable
     {
         private int currentSize;
@@ -26,15 +26,7 @@ class quadratic_probing{
         public int getSize(){
             return currentSize;
         }
-
-        public boolean isFull(){
-            return currentSize == maxSize;
-        }
-
-        public boolean isEmpty(){
-            return getSize() == 0;
-        }
-
+    
         public boolean contains(String key){
             return get(key) != null;
         }
@@ -103,7 +95,6 @@ class quadratic_probing{
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the size:-");
         QuadraticProbingHashTable qpht = new QuadraticProbingHashTable(scan.nextInt() );
-        char ch;
         while(true){
             System.out.println("\nHash Table Operations\n");
             System.out.println("1. Insert into Hash Table");

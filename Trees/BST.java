@@ -1,8 +1,8 @@
-package com.test;
+package Trees;
 
 import java.util.Scanner;
 
-public class BST {
+class BST {
 	static class Node{
 		int data;
 		Node left;

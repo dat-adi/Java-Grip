@@ -1,9 +1,11 @@
+package searching;
+
 import java.util.Scanner;
 
 //Successful searches -> elements present in the list.
 //Unsuccessful searches => elements not present in the list.
 
-class linearSearch{
+class LinearSearch {
     private static boolean searchForElement(final int ele, final int[] arr){
         boolean result = false;
         for(int i = 0; i < arr.length; i++){

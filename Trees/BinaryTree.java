@@ -1,9 +1,8 @@
-package com.test;
+package Trees;
 
 import java.util.Scanner;
 
-
-public class BinaryTree {
+class BinaryTree {
 	
 	static class Node{
 		int key;

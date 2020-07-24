@@ -2,7 +2,7 @@ package Prime;
 
 import java.util.*;
 
-class summingUpPrimes
+class SummingUpPrimes
 {
 	public static void main(String[] args)
 	{

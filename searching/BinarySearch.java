@@ -1,6 +1,8 @@
+package searching;
+
 import java.util.Scanner;
 
-class binarySearch {
+class BinarySearch {
     private static int binSearch(int ele, int[] arr){
         int index=-1;
         int low = 0, high = arr.length-1, mid;

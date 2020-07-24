@@ -2,7 +2,7 @@ package sorting;
 
 import java.util.Scanner;
 
-class heapSort {
+class HeapSort {
 	
 	private static void sort(int[] arr){
 		int n = arr.length;

@@ -1,6 +1,8 @@
+package Arrays;
+
 import java.util.*;
 
-public class Start
+class Start
 {
 	public static void main(String[] args)
 	{

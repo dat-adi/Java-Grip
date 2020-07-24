@@ -1,6 +1,6 @@
 package Pattern;
 
-public class flagPole
+class FlagPole
 {
 	public static void main(String[] args)
 	{

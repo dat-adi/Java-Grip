@@ -1,15 +1,14 @@
 package graph_traversal;
 
-import java.io.*; 
-import java.util.*; 
+import java.util.*;
 
-class depthFirstSearch 
+class DepthFirstSearch
 { 
     private int V;
 
     private LinkedList<Integer> adj[]; 
 
-    depthFirstSearch(int v) 
+    DepthFirstSearch(int v)
     { 
         V = v; 
         adj = new LinkedList[v]; 
@@ -45,7 +44,7 @@ class depthFirstSearch
   
     public static void main(String args[]) 
     { 
-        depthFirstSearch g = new depthFirstSearch(4); 
+        DepthFirstSearch g = new DepthFirstSearch(4);
   
         Scanner sc = new Scanner(System.in);
 

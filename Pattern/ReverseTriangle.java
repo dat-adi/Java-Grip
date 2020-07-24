@@ -1,6 +1,6 @@
 package Pattern;
 
-public class reverseTriangle
+class ReverseTriangle
 {
 	public static void main(String[] args)
 	{

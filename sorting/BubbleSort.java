@@ -1,18 +1,21 @@
+package sorting;
+
 import java.util.Scanner;
 
-public class insertionSort {
+class BubbleSort {
+
 	private static Scanner sc = new Scanner(System.in);
 	
-	private static int[] insertSort(int[] arr, int n){
-		for(int i = 1; i < n; i++){
-			int key = arr[i];
-			int j = i-1;
-			
-			while( j >= 0 && arr[j] > key){
-				arr[j+1] = arr[j];
-				j--;
+	private static int[] sort_arr(int[] arr, int n){
+		int i, j, temp;
+		for(i = 0; i < n; i++){
+			for(j = 0; j < i; j++){
+				if(arr[j] > arr[i]){
+					temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+				}
 			}
-			arr[j+1] = key;
 		}
 		return arr;
 	}
@@ -32,6 +35,6 @@ public class insertionSort {
 		System.out.println("The old array is : ");
 		display(arr);
 		System.out.println("The new sorted array is : ");
-		display(insertSort(arr, size));
+		display(sort_arr(arr, size));
 	}
 }

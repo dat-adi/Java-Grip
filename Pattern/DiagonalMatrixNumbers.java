@@ -2,7 +2,7 @@ package Pattern;
 
 import java.util.*;
 
-public class diagonalMatrixNumbers
+class DiagonalMatrixNumbers
 {
 	public static void main(String[] args)
 	{
@@ -30,5 +30,6 @@ public class diagonalMatrixNumbers
 			}
 			System.out.println();
 		}
+		sc.close();
 	}
 }

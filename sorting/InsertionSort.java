@@ -2,22 +2,19 @@ package sorting;
 
 import java.util.Scanner;
 
-public class selectionSort {
+class InsertionSort {
 	private static Scanner sc = new Scanner(System.in);
 	
-	private static int[] selectSort(int[] arr){
-		int min;
-		int n = arr.length;
-		for(int i = 0; i < n; i++){
-			min = i;
-			for(int j = i+1; j < n; j++){
-				if(min > arr[j]){
-					min = j;
-				}
+	private static int[] insertSort(int[] arr, int n){
+		for(int i = 1; i < n; i++){
+			int key = arr[i];
+			int j = i-1;
+			
+			while( j >= 0 && arr[j] > key){
+				arr[j+1] = arr[j];
+				j--;
 			}
-			int temp = arr[min];
-			arr[min] = arr[i];
-			arr[i] = temp;
+			arr[j+1] = key;
 		}
 		return arr;
 	}
@@ -37,6 +34,6 @@ public class selectionSort {
 		System.out.println("The old array is : ");
 		display(arr);
 		System.out.println("The new sorted array is : ");
-		display(selectSort(arr));
+		display(insertSort(arr, size));
 	}
 }

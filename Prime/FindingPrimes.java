@@ -2,7 +2,7 @@ package Prime;
 
 import java.util.*;
 
-public class findingPrimes
+class FindingPrimes
 {
 	public static void main(String[] args)
 	{

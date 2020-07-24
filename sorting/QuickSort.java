@@ -2,7 +2,7 @@ package sorting;
 
 import java.util.Scanner;
 
-public class quickSort {
+class QuickSort {
 	
 	private static Scanner sc = new Scanner(System.in);
 	

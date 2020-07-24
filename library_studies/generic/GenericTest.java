@@ -1,6 +1,6 @@
-import java.util.*;
+package library_studies.generic;
 
-class generic_test{
+class GenericTest {
 
     public static < E > void printArray( E[] arr){
         for( E element : arr){
