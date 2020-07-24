@@ -2,7 +2,7 @@ package online_programs;
 
 import java.util.*;
 
-class formatOutput{
+class FormatOutput {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         String[] s1 = new String[3];

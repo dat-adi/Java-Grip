@@ -2,7 +2,7 @@ package online_programs;
 
 import java.util.*;
 
-class triplets{
+class Triplets {
     private static int[] compare(int[] al, int[] bob){
         int[] score = {0, 0};
         for(int i = 0; i < 3; i++){

@@ -2,9 +2,9 @@ package online_programs;
 
 import java.util.*;
 
-class hourglass{
+class HourGlass{
 
-    private static int makeathree(int[][] arr){
+    private static int MakeAThree(int[][] arr){
         int sum, highest = 0;
         for(int i = 0; i < 4; i++){
             for(int j = 0; j < 4; j++){
@@ -43,7 +43,7 @@ class hourglass{
             System.out.println();
         }
 
-        System.out.println("The highest sum is : " + makeathree(arr));
+        System.out.println("The highest sum is : " + MakeAThree(arr));
 
         sc.close(); //Preventing Scanner Leakage
     }

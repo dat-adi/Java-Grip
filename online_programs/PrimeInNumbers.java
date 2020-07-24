@@ -1,9 +1,11 @@
+package online_programs;
+
 import java.util.*;
 
-class primes_in_numbers{
+class PrimeInNumbers {
     private static String PrimeDecomp(int num){
-        List<Integer> powers = new ArrayList<Integer>();
-        List<Integer> numbers = new ArrayList<Integer>();
+        List<Integer> powers = new ArrayList<>();
+        List<Integer> numbers = new ArrayList<>();
         int dup = num;
         int count;
         for(int i = 2; i < num/2; i++){
@@ -17,14 +19,14 @@ class primes_in_numbers{
                 powers.add(count);
             }
         }
-        String str = "";
+        StringBuilder str = new StringBuilder();
         for(int i = 0; i < numbers.size(); i++){
             if(powers.get(i) != 1)
-                str += "(" + numbers.get(i) + "**" + powers.get(i) + ")";
+                str.append("(").append(numbers.get(i)).append("**").append(powers.get(i)).append(")");
             else
-                str += "(" + numbers.get(i) + ")";
+                str.append("(").append(numbers.get(i)).append(")");
         }
-        return str;
+        return str.toString();
     }
     public static void main(String[] args){
         int num = 10224;

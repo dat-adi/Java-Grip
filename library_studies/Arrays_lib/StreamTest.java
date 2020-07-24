@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.*;
 
-public class streamTest {
+class StreamTest {
 	private static void stream_out(){
 		String[] str = {"A", "Fine", "Day"};
 		Stream<String> stream = Arrays.stream(str);

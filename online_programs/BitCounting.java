@@ -1,4 +1,6 @@
-public class BitCounting {
+package online_programs;
+
+class BitCounting {
 	public static int countBits(int n){
         String binarybois = Integer.toBinaryString(n);
         int count = 0;

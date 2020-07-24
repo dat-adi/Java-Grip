@@ -1,28 +1,24 @@
-public class TenMinWalk {
+package online_programs;
+
+class TenMinWalk {
   public static boolean isValid(char[] walk) {
     if(walk.length != 10){
       return false;
     }
     int nscount = 0;
     int wecount = 0;
-    for(int i = 0; i < walk.length; i++){
-      if(walk[i] == 'n'){
+    for (char c : walk) {
+      if (c == 'n') {
         nscount++;
-      }
-      else if(walk[i] == 's'){
+      } else if (c == 's') {
         nscount--;
-      }
-      else if(walk[i] == 'w'){
+      } else if (c == 'w') {
         wecount++;
-      }
-      else if(walk[i] == 'e'){
+      } else if (c == 'e') {
         wecount--;
       }
     }
-    if(nscount == 0 && wecount == 0){
-      return true;
-    }
-    return false;
+    return nscount == 0 && wecount == 0;
   }
 
   public static void main(String[] args){

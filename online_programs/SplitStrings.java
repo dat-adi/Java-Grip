@@ -1,8 +1,10 @@
+package online_programs;
+
 import java.util.*;
 import java.lang.*;
 
 
-public class split_strings {
+class SplitStrings{
     public static String[] solution(String s) {
       String[] splits;
       int len = s.length();

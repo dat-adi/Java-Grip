@@ -2,7 +2,7 @@ package online_programs;
 
 import java.util.*;
 
-class eleLinked{
+class EleLinked {
     static class Node{
         int data;
         Node next;
@@ -15,7 +15,7 @@ class eleLinked{
     private static Node head = null;
     private static Node tail = null;
 
-    private static Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
 
     private static void create_link(int size){
         for(int i = 0; i < size; i++){

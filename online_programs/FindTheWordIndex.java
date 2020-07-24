@@ -2,12 +2,12 @@ package online_programs;
 
 import java.util.*;
 
-public class findTheWordIndex {
+class FindTheWordIndex {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		String str = new String(sc.nextLine());
+		String str = sc.nextLine();
 		
-		String input_line = new String(sc.nextLine());
+		String input_line = sc.nextLine();
 		boolean check = false;
 		String done = "u";
 		int count = 1;
@@ -17,11 +17,7 @@ public class findTheWordIndex {
 			} else if(str.charAt(i) == input_line.charAt(0)) {
 				try {
 					for (int j = 0; j < input_line.length(); j++) {
-						if(str.charAt(i+j) == input_line.charAt(j)) {
-							check = true;
-						} else {
-							check = false;
-						}
+						check = str.charAt(i + j) == input_line.charAt(j);
 					}
 				} catch (StringIndexOutOfBoundsException e){
 					System.out.println("Not found");

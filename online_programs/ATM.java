@@ -9,7 +9,7 @@ package online_programs;
 
 import java.util.*;
 
-public class ATM{
+class ATM{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
 		double with_amt, bal_amt;

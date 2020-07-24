@@ -1,4 +1,6 @@
-public class twosum
+package online_programs;
+
+class TwoSum
 {
     public static int[] twoSum(int[] numbers, int target)
     {
@@ -8,14 +10,11 @@ public class twosum
             for(int j = 0; j < numbers.length; j++){
                 temp2 = numbers[j]; 
                 if(temp1 + temp2 == target && i != j){
-                    int[] arr = new int[]{temp1,temp2}; 
-                    return arr;
+                    return new int[]{temp1,temp2};
                 }
-                else
-                    continue;
             }
         }
-        return null;
+        return new int[]{0, 0};
     }
 
     public static void main(String[] args){

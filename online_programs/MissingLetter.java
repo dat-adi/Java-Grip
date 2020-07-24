@@ -1,6 +1,6 @@
 package online_programs;
 
-public class missing_letter
+class MissingLetter
 {
     public static char findMissingLetter(char[] array)
     {

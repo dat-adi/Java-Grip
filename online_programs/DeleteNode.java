@@ -1,7 +1,9 @@
-import java.io.*;
-import java.util.Scanner;
+package online_programs;
 
-public class nodeAtPos {
+import java.io.*;
+import java.util.*;
+
+class DeleteNode {
 
     static class SinglyLinkedListNode {
         public int data;
@@ -47,23 +49,14 @@ public class nodeAtPos {
         }
     }
 
-    static SinglyLinkedListNode insertNodeAtPosition(SinglyLinkedListNode head, int data, int position) {
-        SinglyLinkedListNode temp = new SinglyLinkedListNode(data);
-        SinglyLinkedListNode tail = null;
-        if(head == null){
-            head = tail = temp;
+    static SinglyLinkedListNode deleteNode(SinglyLinkedListNode head, int position) {
+        SinglyLinkedListNode p = head;
+        SinglyLinkedListNode q = p.next;
+        for(int i = 0; i < position-1; i++){
+            p = p.next;
+            q = q.next;
         }
-        else{
-            tail = head;
-        }
-        int i = 0;
-        while(i < position-1){
-            tail = tail.next;
-            i++;
-        }
-        SinglyLinkedListNode tail2 = tail.next;
-        tail.next = temp;
-        temp.next = tail2;
+        p.next = q.next;
         return head;
     }
 
@@ -84,15 +77,12 @@ public class nodeAtPos {
             llist.insertNode(llistItem);
         }
 
-        int data = scanner.nextInt();
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-
         int position = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        SinglyLinkedListNode llist_head = insertNodeAtPosition(llist.head, data, position);
+        SinglyLinkedListNode llist1 = deleteNode(llist.head, position);
 
-        printSinglyLinkedList(llist_head, " ", bufferedWriter);
+        printSinglyLinkedList(llist1, " ", bufferedWriter);
         bufferedWriter.newLine();
 
         bufferedWriter.close();

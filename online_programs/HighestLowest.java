@@ -1,8 +1,7 @@
 package online_programs;
 
-public class highest_lowest{
+class HighestLowest {
   public static String highAndLow(String numbers) {
-    int high = 0, low =99;
     String[] numArr = numbers.split(" ");
     int[] numberArr = new int[numArr.length];
     for(int i = 0; i < numArr.length; i++){
@@ -13,20 +12,24 @@ public class highest_lowest{
   
   private static int highestCalc(int[] arr){
     int highest = arr[0];
-    for(int i = 0; i < arr.length; i++){
-      if(arr[i]> highest){
-        highest = arr[i];
+    for (int value : arr) {
+      if (value > highest) {
+        highest = value;
       }
     }
     return highest;
   }
   private static int lowestCalc(int[] arr){
     int lowest = arr[0];
-    for(int i = 0; i < arr.length; i++){
-      if(arr[i] < lowest){
-        lowest = arr[i];
+    for (int value : arr) {
+      if (value < lowest) {
+        lowest = value;
       }
     }
     return lowest;
+  }
+  public static void main(String[] args){
+    String numArr = "2 4 1 7 3 5 9 8";
+    System.out.println(highAndLow(numArr));
   }
 }

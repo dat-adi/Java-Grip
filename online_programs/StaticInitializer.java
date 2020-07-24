@@ -2,7 +2,7 @@ package online_programs;
 
 import java.util.*;
 
-public class static_initializer {
+class StaticInitializer{
     static Scanner sc = new Scanner(System.in);
     static int B = sc.nextInt();
     static int H = sc.nextInt();
@@ -19,6 +19,5 @@ public class static_initializer {
 			int area=B*H;
 			System.out.print(area);
 		}
-		
 	}
 }

@@ -2,22 +2,17 @@ package online_programs;
 
 import java.util.*;
 
-class leftRotation {
+class LeftRotation {
 
-    private static int[] rotation(int[] arr, int rots){
+    private static void rotation(int[] arr, int rots){
         int size = arr.length - 1;
         int[] arr2 = new int[arr.length];
         for(int i = 0; i < rots; i++){
             arr2[size] = arr[0];
-            for(int j = size; j >= 1; j--){
-                arr2[j-1] = arr[j];
-            }
-            for(int j = 0; j <= size; j++){
-                arr[j] = arr2[j];
-            }
+            System.arraycopy(arr, 1, arr2, 0, size);
+            System.arraycopy(arr2, 0, arr, 0, size + 1);
         }
         System.out.println();
-        return arr;
     }
 
     public static void main(String[] args){
@@ -30,9 +25,9 @@ class leftRotation {
         for(int i = 0; i < arr.length; i++){
             arr[i] = sc.nextInt();
         }
-        arr = rotation(arr, rots);
-        for(int i = 0; i < arr.length; i++){
-            System.out.print(arr[i] + " ");
+        rotation(arr, rots);
+        for (int value : arr) {
+            System.out.print(value + " ");
         }
         sc.close();
     }
