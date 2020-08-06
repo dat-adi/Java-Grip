@@ -14,6 +14,7 @@ public class GUI_first implements ActionListener {
 	public GUI_first(){
 		frame = new JFrame();
 		
+		JFrame.setDefaultLookAndFeelDecorated(true);
 		JButton button = new JButton("Click me ");
 		button.addActionListener(this);
 		label = new JLabel("Number of clicks : " + count);
