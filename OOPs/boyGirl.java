@@ -19,11 +19,13 @@ public class boyGirl {
 	
 	public static void main(String[] args) {
 		Person boy = new Person("black", "black", "Fair", "5.10 inch", "65 kg");
-		System.out.println("John has " + boy.hairColor + " hair, " + boy.eyeColor + " eyes, " + boy.skinColor + " skin " + boy.height + " tall  and weighs " + boy.weight);
+		System.out.println("John has " + boy.hairColor + " hair, " + boy.eyeColor + " eyes, " +
+			boy.skinColor + " skin " + boy.height + " tall  and weighs " + boy.weight);
 		System.out.printf("John might be %s, %s, %s, %s.%n", boy.read(), boy.play(), boy.sleep(), boy.walk());
 		
 		Person girl = new Person("brown", "brown", "milky white", "5.4 inch", "50 kg");
-		System.out.println("Emily has " + girl.hairColor + " hair, " + girl.eyeColor + " eyes, " + girl.skinColor + " skin " + girl.height + " tall  and weighs " + girl.weight);
+		System.out.println("Emily has " + girl.hairColor + " hair, " + girl.eyeColor + " eyes, " +
+			girl.skinColor + " skin " + girl.height + " tall  and weighs " + girl.weight);
 		System.out.printf("Emily might be %s, %s, %s, %s.%n", girl.read(), girl.play(), girl.sleep(), girl.walk());
 	}
 }
