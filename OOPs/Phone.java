@@ -1,10 +1,9 @@
 package OOPs;
 
 class Phone{
-	double width, height;
-	String OS, brand, price;
+	String width, height,OS, brand, price;
 	
-	Phone(double width, double height, String OS, String brand, String price){
+	Phone(String width, String height, String OS, String brand, String price){
 		this.width = width;
 		this.height = height;
 		this.OS = OS;

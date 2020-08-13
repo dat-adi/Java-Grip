@@ -1,33 +1,28 @@
 package OOPs;
 
-import java.util.Scanner;
-
 public class Phone_Use {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the properties for an Iphone : ");
-		System.out.println("Width of the iphone : ");
-		double width = sc.nextDouble();
-		System.out.println("Height of the iphone  : ");
-		double height = sc.nextDouble();
-		sc.nextLine();
-		System.out.println("OS of the iphone  : ");
-		String OS = sc.nextLine();
-		System.out.println("Brand of the iphone  : ");
-		String brand = sc.nextLine();
-		System.out.println("Price of the iphone  : ");
-		String price = sc.nextLine();
 		
-		Phone testPhone = new Phone(width, height, OS, brand, price);
-		System.out.println(testPhone.width);
-		System.out.println(testPhone.height);
-		System.out.println(testPhone.OS);
-		System.out.println(testPhone.brand);
-		System.out.println(testPhone.price);
-		testPhone.call();
-		testPhone.sendMessage();
-		testPhone.browser();
-		testPhone.share();
-		sc.close();
+		Phone sgs4 = new Phone("6.98 cms", "13.6 cms", "Android", "Samsung", "1000 $");
+		System.out.println(sgs4.width);
+		System.out.println(sgs4.height);
+		System.out.println(sgs4.OS);
+		System.out.println(sgs4.brand);
+		System.out.println(sgs4.price);
+		sgs4.call();
+		sgs4.sendMessage();
+		sgs4.browser();
+		sgs4.share();
+		
+		Phone Iphone = new Phone("5.86 cms", "12.3 cms", "IOS", "Apple", "1200 $");
+		System.out.println(Iphone.width);
+		System.out.println(Iphone.height);
+		System.out.println(Iphone.OS);
+		System.out.println(Iphone.brand);
+		System.out.println(Iphone.price);
+		Iphone.call();
+		Iphone.sendMessage();
+		Iphone.browser();
+		Iphone.share();
 	}
 }
