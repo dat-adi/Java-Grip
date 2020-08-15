@@ -40,7 +40,7 @@ public class constructorPairs {
 			}
 		}
 		consPair minMaxCheck = new consPair(min, max);
-		System.out.println(minMaxCheck.returnTwo());
+		System.out.println("Integer pair for (min, max) : " + minMaxCheck.returnTwo());
 	}
 	
 	public static void main(String[] args) {
@@ -54,6 +54,7 @@ public class constructorPairs {
 		System.out.println("Values for no arguments integer pair : " + noArgs.returnTwo());
 		System.out.println("Values for single argument integer pair : " + oneArgs.returnTwo());
 		System.out.println("Values for double argument integer pair : " + allArgs.returnTwo());
+		System.out.println("\n|Operations|\n");
 		System.out.println("Change the first argument in the double integer pair : ");
 		allArgs.changeFirst(sc.nextInt());
 		System.out.println("Change the second argument in the double integer pair : ");
