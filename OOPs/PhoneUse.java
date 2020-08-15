@@ -1,7 +1,37 @@
 package OOPs;
 
-public class Phone_Use {
+public class PhoneUse {
+	static class Phone{
+		String width, height,OS, brand, price;
+		
+		Phone(String width, String height, String OS, String brand, String price){
+			this.width = width;
+			this.height = height;
+			this.OS = OS;
+			this.brand = brand;
+			this.price = price;
+		}
+		
+		void call() {
+			System.out.println("Calling...");
+		}
+		
+		void sendMessage() {
+			System.out.println("Sending Message...");
+		}
+		
+		void browser(){
+			System.out.println("Opening up the browser...");
+		}
+		
+		void share() {
+			System.out.println("Sharing object...");
+		}
+	}
+	
 	public static void main(String[] args) {
+		
+		System.out.println("Samsung Galaxy Phone : \n");
 		
 		Phone sgs4 = new Phone("6.98 cms", "13.6 cms", "Android", "Samsung", "1000 $");
 		System.out.println(sgs4.width);
@@ -13,6 +43,8 @@ public class Phone_Use {
 		sgs4.sendMessage();
 		sgs4.browser();
 		sgs4.share();
+		
+		System.out.println("\nApple Iphone : \n");
 		
 		Phone Iphone = new Phone("5.86 cms", "12.3 cms", "IOS", "Apple", "1200 $");
 		System.out.println(Iphone.width);
