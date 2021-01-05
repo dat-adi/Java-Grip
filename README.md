@@ -1,3 +1,5 @@
+*The documentation is due for updation*
+
 # Java-Grip
 ## Arrays
 <pre>
@@ -68,4 +70,4 @@ HeapSort.java          | Sorts elements using the heap sort algorithm
 QuadraticProbing.java  | Creates a hashing table, employs methods with quadratic probing.
 </pre>
 ---
- This is a compilation of all the java programs i've tried and tested.
+This is a compilation of all the java programs i've tried and tested.
