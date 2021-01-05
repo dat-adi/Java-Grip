@@ -12,7 +12,7 @@ public class FirstGen {
 		}
 	}
 	public static void main(String[] args) {
-		GenCheck <Integer> genInt = new GenCheck<>(80);
+		GenCheck <String> genInt = new GenCheck<>("Big Brainer");
 		genInt.showType();
 	}
 }
