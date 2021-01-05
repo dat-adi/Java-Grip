@@ -27,7 +27,6 @@ public class LeastFrequent {
 		// If last element is least frequent
 		if (curr_count < min_count)
 		{
-			min_count = curr_count;
 			res = arr[n - 1];
 		}
 		

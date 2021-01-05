@@ -1,6 +1,6 @@
 package Generics;
 
-class GenericTest {
+public class GenericTest {
 
     public static < E > void printArray( E[] arr){
         for( E element : arr){

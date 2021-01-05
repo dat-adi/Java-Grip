@@ -1,6 +1,6 @@
 package Generics;
 
-class BoundedParams {
+public class BoundedParams {
     public static <T extends Comparable<T>> T maximum(T x, T y, T z) {
         T max = x;
         if(y.compareTo(max) > 0){
