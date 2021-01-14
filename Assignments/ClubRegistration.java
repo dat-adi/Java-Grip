@@ -1,4 +1,4 @@
-package ClubRegistration;
+package Assignments;
 
 import java.util.*;
 
