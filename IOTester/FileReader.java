@@ -4,7 +4,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class Filer {
+// Testing this program would require you to create the class file and the text file location in the same directory.
+public class FileReader {
 	public static void main(String[] args) {
 		int i;
 		FileInputStream fin;
