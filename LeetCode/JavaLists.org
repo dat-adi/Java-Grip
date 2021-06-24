@@ -1,0 +1,141 @@
+#+TITLE: Java Lists
+#+AUTHOR: Dat Adithya
+
+* WHAT IS THIS?
+A simple literate programming file, on working with Java's Collection Framework of Lists.
+This framework is brought into Java, using the =util.*= import.
+
+I'll be adding any sort of programs related to Lists found on Hackerrank here, as a means to keep a record of the programs and the methods to solve them.
+
+* Java Lists Collection Framework
+** Creating a List Interface
+To create a list interface, we use the following methods to do so,
+
+#+BEGIN_SRC java
+List <Integer> list1 = new ArrayList();
+List <Integer> list2 = new LinkedList();
+List <Integer> list3 = new Vector();
+List <Integer> list4 = new Stack();
+#+END_SRC
+
+We can create quite a few lists, but, for this particular file, we'll be working with Array Lists.
+
+** ArrayList
+The elements in this data structure can be randomly accessed.
+Maintains it's insertion order and is non-synchronized.
+
+#+HEADERS: :classname TestingLists
+#+BEGIN_SRC java :results output :imports java.util.ArrayList
+class TestingLists{
+    public static void main(String[] args){
+        ArrayList<Integer> list1 = new ArrayList<Integer>();
+        list1.add(10);
+        list1.add(20);
+        list1.add(30);
+        list1.add(40);
+
+        Integer[] intArray = new Integer[list1.size()];
+        intArray = list1.toArray(intArray);
+        for(int i = 0; i < list1.size(); i++){
+            System.out.println(intArray[i]);
+        }
+    }
+}
+#+END_SRC
+
+#+RESULTS:
+#+begin_example
+jangofett
+
+[31m   ▄█████▄ [32m   ▄█████▄ [33m   ▄█████▄ [34m   ▄█████▄ [35m   ▄█████▄ [36m   ▄█████▄
+[31m   █▄▄ ▄▄█ [32m   █▄▄ ▄▄█ [33m   █▄▄ ▄▄█ [34m   █▄▄ ▄▄█ [35m   █▄▄ ▄▄█ [36m   █▄▄ ▄▄█
+[31m   ███ ███ [32m   ███ ███ [33m   ███ ███ [34m   ███ ███ [35m   ███ ███ [36m   ███ ███
+[31m   ▀██ ██▀ [32m   ▀██ ██▀ [33m   ▀██ ██▀ [34m   ▀██ ██▀ [35m   ▀██ ██▀ [36m   ▀██ ██▀
+[31m     ▀ ▀   [32m     ▀ ▀   [33m     ▀ ▀   [34m     ▀ ▀   [35m     ▀ ▀   [36m     ▀ ▀
+[1m
+[31m   ▄█████▄ [32m   ▄█████▄ [33m   ▄█████▄ [34m   ▄█████▄ [35m   ▄█████▄ [36m   ▄█████▄
+[31m   █▄▄ ▄▄█ [32m   █▄▄ ▄▄█ [33m   █▄▄ ▄▄█ [34m   █▄▄ ▄▄█ [35m   █▄▄ ▄▄█ [36m   █▄▄ ▄▄█
+[31m   ███ ███ [32m   ███ ███ [33m   ███ ███ [34m   ███ ███ [35m   ███ ███ [36m   ███ ███
+[31m   ▀██ ██▀ [32m   ▀██ ██▀ [33m   ▀██ ██▀ [34m   ▀██ ██▀ [35m   ▀██ ██▀ [36m   ▀██ ██▀
+[31m     ▀ ▀   [32m     ▀ ▀   [33m     ▀ ▀   [34m     ▀ ▀   [35m     ▀ ▀   [36m     ▀ ▀
+[0m
+
+10
+20
+30
+40
+#+end_example
+
+* Hackerrank Problems
+** Sock Merchant
+**Question**
+There is a large pile of socks that must be paired by color.
+Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.
+
+**Function Description**
+Complete the sockMerchant function in the editor below.
+
+sockMerchant has the following parameter(s):
+_int n_: the number of socks in the pile
+_int ar[n]_: the colors of each sock
+
+**Returns**
+int: the number of pairs
+
+#+BEGIN_SRC java :results output
+class SockMerchant{
+    public static int sockMerchant(int n, List<Integer> ar) {
+        int sock1, sock2;
+        int i = 0, sockCounter = 0;
+        Integer[] arr = new Integer[ar.size()];
+        ar.toArray(arr);
+
+        for(i = 0; i < ar.size(); i++){
+            for(int j = 0; j < ar.size(); j++){
+                if(arr[j] > arr[i]){
+                    int tmp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = tmp;
+                }
+            }
+        }
+
+        i = 0;
+
+        while(i < n-1){
+            sock1 = arr[i];
+            sock2 = arr[i+1];
+            System.out.println("Current Sock : " + sock1 + ", Next Sock : " + sock2);
+            if(sock1 == sock2){
+                sockCounter++;
+                i++;
+            }
+            System.out.println("Sock Pairs : " + sockCounter);
+            i++;
+        }
+
+        return sockCounter;
+    }
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        int n = Integer.parseInt(bufferedReader.readLine().trim());
+
+        List<Integer> ar = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+            .map(Integer::parseInt)
+            .collect(toList());
+
+        int result = Result.sockMerchant(n, ar);
+
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
+
+        bufferedReader.close();
+        bufferedWriter.close();
+    }
+}
+#+END_SRC
+
+Link to the question => [[https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup][Sock Merchant on Hackerrank]].
