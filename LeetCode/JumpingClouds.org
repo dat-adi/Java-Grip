@@ -1,0 +1,86 @@
+#+TITLE: Jumping Clouds
+#+AUTHOR: Dat Adithya
+#+TAGS: @wit @collections
+
+* WHAT IS THIS? :@wit:
+A program designed to implement problem solving based on the given conditions.
+
+* Jumping on the Clouds :@collections:
+**Question**
+There is a new mobile game that starts with consecutively numbered clouds.
+Some of the clouds are thunderheads and others are cumulus.
+
+The player can jump on any cumulus cloud having a number that is equal to the number of the current cloud plus =1= or =2=. The player must avoid the thunderheads.
+Determine the minimum number of jumps it will take to jump from the starting postion to the last cloud. It is always possible to win the game.
+
+For each game, you will get an array of clouds numbered 0 if they are safe or 1 if they must be avoided.
+
+**Function Description**
+
+Complete the jumpingOnClouds function in the editor below.
+
+jumpingOnClouds has the following parameter(s):
+_int c[n]_ : an array of binary integers
+
+**Returns**
+int: the minimum number of jumps required
+
+#+HEADERS: :classname JumpingClouds
+#+BEGIN_SRC java :results silent
+class JumpingClouds {
+
+    /*
+     ,* Complete the 'jumpingOnClouds' function below.
+     ,*
+     ,* The function is expected to return an INTEGER.
+     ,* The function accepts INTEGER_ARRAY c as parameter.
+     ,*/
+
+    public static int jumpingOnClouds(List<Integer> c) {
+        // Initializing variables
+        Integer[] clouds = new Integer[c.size()];
+        int i = 0, jumps = 0;
+        int n = c.size();
+
+        // Converting the List Integer into an Array
+        clouds = c.toArray(clouds);
+
+        // Checking the conditions for the clouds
+        while( i < n-2 ){
+            if( clouds[i+2] == 0 ){
+                jumps++;
+                i += 2;
+            } else {
+                jumps++;
+                i++;
+            }
+            System.out.println("Value of I : " + i + " and jumps : " + jumps);
+        }
+
+        // Checking the last bit if the pointer has not reached the end of the list
+        if( i != n-1 ){
+            jumps++;
+        }
+
+        // Returning the jumps
+        return jumps;
+    }
+
+    public static void main(String[] args){
+        // Executing the function with a simple I/O operation
+        List<Integer> cloudList = new List<Integer>();
+        cloudList.add(0);
+        cloudList.add(1);
+        cloudList.add(0);
+        cloudList.add(0);
+        cloudList.add(0);
+        cloudList.add(1);
+        cloudList.add(0);
+
+        int numberOfJumps = jumpingOnClouds(cloudList);
+        System.out.println("The minimum number of jumps : " + numberOfJumps);
+    }
+}
+#+END_SRC
+
+Link to the question => [[https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup][Jumping on the Clouds on Hackerrank]].
