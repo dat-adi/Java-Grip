@@ -4,3 +4,4 @@
 production.Java-Grip
 *.iml
 production
+.class
