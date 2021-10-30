@@ -1,5 +1,3 @@
-package SortAlgorithms;
-
 import java.util.Scanner;
 
 class QuickSort {
