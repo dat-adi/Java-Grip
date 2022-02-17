@@ -1,5 +1,3 @@
-package MultiThreading;
-
 public class MThread {
 	static class TEx1 extends Thread {
 		MThread mt;
@@ -8,6 +6,7 @@ public class MThread {
 			this.mt = mt;
 		}
 		public void run() {
+            System.out.println(getName());
 			for(int i=0;i<10;i++) {
 				mt.a[i]= i * i;
 			}
