@@ -1,10 +1,6 @@
-/*
- * @name: G V Datta Adithya
- * @regno: 19BCE7119
- */
 import java.util.Scanner;
 
-class AssignTask1 {
+class zeroOneCounter {
     public static void main(String[] args){
         // Defining the scanner variable
         Scanner sc = new Scanner(System.in);

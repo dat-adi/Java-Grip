@@ -1,9 +1,3 @@
-/*
- *
- * @name: G V Datta Adithya
- * @regno: 19BCE7119
- *
- */
 // Importing the Scanner class for input
 import java.util.Scanner;
 
@@ -74,10 +68,8 @@ class SLL{
     }
 }
 
-
-class AssignTask2 {
+class PartitionList {
     public static Node partition(Node head, int x) {
-         
         /* Let us initialize first and last nodes of
         three linked lists
             1) Linked list of values smaller than x.

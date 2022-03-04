@@ -1,9 +1,3 @@
-/*
- *
- * @name: G V Datta Adithya
- * @regno: 19BCE7119
- *
- */
 // Importing the Scanner class for input
 import java.util.Scanner;
 import java.util.HashSet;
@@ -99,7 +93,7 @@ class SLL{
     } 
 }
 
-class AssignTask3{
+class RemoveDupicates{
     public static void main(String[] args){
         // Taking inputs using the scanner object
         Scanner sc = new Scanner(System.in);
