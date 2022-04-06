@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class TspDynamicProgramming {
+public class TSP {
 
   private final int N, start;
   private final double[][] distance;
@@ -17,11 +17,11 @@ public class TspDynamicProgramming {
   private double minTourCost = Double.POSITIVE_INFINITY;
   private boolean ranSolver = false;
 
-  public TspDynamicProgramming(double[][] distance) {
+  public TSP(double[][] distance) {
     this(0, distance);
   }
 
-  public TspDynamicProgramming(int start, double[][] distance) {
+  public TSP(int start, double[][] distance) {
     N = distance.length;
 
     this.start = start;
@@ -171,8 +171,8 @@ public class TspDynamicProgramming {
     }
 
     int startNode = 0;
-    TspDynamicProgramming solver =
-        new TspDynamicProgramming(startNode, distanceMatrix);
+    TSP solver =
+        new TSP(startNode, distanceMatrix);
 
     System.out.println("Tour: " + solver.getTour());
     System.out.println("Tour cost: " + solver.getTourCost());

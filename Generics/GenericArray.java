@@ -1,8 +1,8 @@
 package Generics;
 
-public class GenericTest {
+public class GenericArray {
 
-    public static < E > void printArray( E[] arr){
+    public static <E> void printArray(E[] arr){
         for( E element : arr){
             System.out.println(element);
         }

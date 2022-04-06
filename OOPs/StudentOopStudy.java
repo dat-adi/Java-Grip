@@ -2,7 +2,7 @@ package OOPs;
 
 import java.util.Scanner;
 
-public class student_oop_study {
+public class StudentOopStudy {
 	private static class Student {
 		private String name;
 		private int age;

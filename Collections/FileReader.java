@@ -1,4 +1,4 @@
-package IOTester;
+package Collections;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

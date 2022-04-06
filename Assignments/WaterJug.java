@@ -33,11 +33,15 @@ class Pair{
  
 public class WaterJug{
     public static void main(String[] args) throws java.lang.Exception{
-        int jug1 = 4;
-        int jug2 = 3;
-        int target = 2;
+        Scanner sc = new Scanner(System.in);
+
+        int m = sc.nextInt();
+        int n = sc.nextInt();
+        int d = sc.nextInt();
  
-        getPathIfPossible(jug1, jug2, target);
+        getPathIfPossible(m, n, d);
+
+        sc.close();
     }
    
      private static void getPathIfPossible(int jug1, int jug2, int target){

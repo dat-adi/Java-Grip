@@ -1,4 +1,4 @@
-package IOTester;
+package Collections;
 
 // Working with assertion requires you to run the file using java -ea filename
 public class AssertDemo {
